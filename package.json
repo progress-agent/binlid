@@ -1,0 +1,18 @@
+{
+  "name": "binlid",
+  "version": "0.0.1",
+  "description": "Voice/text inventory tracker for storage spaces",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Tests not yet implemented\" && exit 1"
+  },
+  "keywords": ["inventory", "storage", "telegram-bot"],
+  "author": "progress-agent",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "dotenv": "^16.4.5"
+  }
+}
