@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
+    "cli": "node src/cli.js",
     "test": "echo \"Tests not yet implemented\" && exit 1"
+  },
+  "bin": {
+    "binlid": "src/cli.js"
   },
   "keywords": ["inventory", "storage", "telegram-bot"],
   "author": "progress-agent",
   "license": "MIT",
   "dependencies": {
-    "better-sqlite3": "^9.4.3",
     "dotenv": "^16.4.5"
   }
 }
