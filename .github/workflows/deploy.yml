@@ -1,22 +1,22 @@
 name: Deploy to Cloudflare Pages
 
 on:
-  push:
-    branches: [main]
+    push:
+      branches: [main]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    deploy:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: read
+        deployments: write
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
 
-       - name: Deploy to Cloudflare Pages
-      uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 28545ba54b40870d8b2a203196c5516b
-          command: pages deploy public --project-name=binlid
+        - name: Deploy to Cloudflare Pages
+          uses: cloudflare/wrangler-action@v3
+          with:
+            apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+            accountId: 28545ba54b40870d8b2a203196c5516b
+            command: pages deploy public --project-name=binlid
