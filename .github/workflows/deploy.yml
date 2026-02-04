@@ -18,5 +18,5 @@ jobs:
           uses: cloudflare/wrangler-action@v3
           with:
             apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-            accountId: 28545ba54b40870d8b2a203196c5516b
+            accountId: 65214cfdb084e5d944b5fdf2d12e7707
             command: pages deploy public --project-name=binlid
