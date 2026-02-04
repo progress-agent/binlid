@@ -28,3 +28,4 @@ node src/cli.js move "Bin lid" --to "Garage" --location "shelf B"
 ## Environment
 
 - `BINLID_DB` — SQLite database path (default: `./binlid.db`)
+
